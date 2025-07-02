@@ -1,6 +1,11 @@
 # Graph4Air: SCFL-Augmented Road Network Graphs for NO₂ Mapping
 
 *A toolkit for building augmented road-segment graphs and training Graph Neural Networks (GCN, GAT) to predict street-level NO₂ concentrations in Amsterdam.*
+---
+
+## Data Confidentiality
+
+The raw NO₂ measurement datasets (both the Palmes‐tube diffusion data and the mobile monitoring road‐segment NO₂ data) cannot be provided here due to confidentiality agreements.
 
 ---
 
