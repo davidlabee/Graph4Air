@@ -9,20 +9,8 @@
 ```
 ├── README.md                   # This file
 ├── requirements.txt            # Python dependencies
-├── data/
-│   ├── raw/                    # Place raw GeoJSON & CSV data here
-│   └── processed/              # Preprocessed feature matrices & base graph
-├── notebooks/
-│   ├── augmented_graph_builder.ipynb   # Interactive SCFL graph builder
-│   └── Main_Model.ipynb               # Interactive model training & evaluation
-├── scripts/
-│   ├── augmented_graph_builder.py     # Script version of graph builder
-│   └── main_model.py                  # Script version of model training & evaluation
-├── outputs/
-│   ├── G_gcn_augmented.gpickle        # Best GCN-augmented graph
-│   ├── G_gat_augmented.gpickle        # Best GAT-augmented graph
-│   └── ...                            # Model checkpoints, metrics, maps
-└── docs/                                 # API docs & data preparation guides
+├── augmented_graph_builder.ipynb   # Interactive SCFL graph builder
+├── main_model.ipynb               # Interactive model training & evaluation
 ```
 
 ---
@@ -42,17 +30,6 @@
    source venv/bin/activate
    pip install -r requirements.txt
    ```
-
----
-
-## 🗂 Data Preparation
-
-1. **Raw data** (mobile NO₂ samples, GIS layers) must be downloaded per `docs/data_instructions.md` and placed under `data/raw/`.
-2. **Preprocessing** (temporal correction, snapping to 50 m segments, feature aggregation) can be done via your existing pipeline or by adapting `scripts/run_preprocess.py` to output:
-
-   * `data/processed/road_network_lufeature.geojson`
-   * `data/processed/segment_features.csv`
-
 ---
 
 ## ⚙️ Graph Builder
