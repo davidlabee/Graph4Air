@@ -42,7 +42,7 @@ The raw NO₂ measurement datasets (both the Palmes‐tube diffusion data and th
 The graph builder script/notebook (`augmented_graph_builder.py` or `.ipynb`) performs:
 
 1. **Loading & reprojection** of the 50 m road‐segment GeoJSON.
-2. **Feature extraction** (NO₂ target + GIS covariates).
+2. **Feature extraction** (NO₂ target + feature data).
 3. **Base graph construction** (NetworkX adjacency via geometry touches).
 4. **Outlier detection** (MAD‐based, 1-hop neighbors).
 5. **SCFL augmentation** (`augment_grouped_far_knn`):
